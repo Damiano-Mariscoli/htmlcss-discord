@@ -141,6 +141,9 @@ a {
 /* FEATURE */
 .feature .frog.col-60{
     background-image: url(../img/item1.svg);
+    height: 400px;
+    min-width: 620px;
+    background-repeat: no-repeat;
 }
 
 /* DEBUG */
@@ -164,14 +167,14 @@ a {
     min-height: 300px;
     border: 2px dashed black;
 }
-.debug.feature .col-60{
+/* .debug.feature .col-60{
     background-color: #1e90ff;
     height: 300px;
-}
-.debug.feature .col-40{
+} */
+/* .debug.feature .col-40{
     background-color: #ffc0cb;
     height: 300px;
-}
+} */
 .debug.feature{
     padding: 30px;
 }
