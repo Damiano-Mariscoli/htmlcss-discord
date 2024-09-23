@@ -138,6 +138,10 @@ a {
 .col-100.bot{
     
 }
+/* FEATURE */
+.feature .frog.col-60{
+    background-image: url(../img/item1.svg);
+}
 
 /* DEBUG */
 
