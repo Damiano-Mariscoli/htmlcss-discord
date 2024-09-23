@@ -29,7 +29,6 @@ a {
     align-items: center;
     flex-wrap: nowrap;
     
-    
 }
 .navbar .menu{
     display: flex;
@@ -37,7 +36,18 @@ a {
     align-items: center;
     padding: 8px;
 }
-
+.navbar .logo{
+    padding: 8px;
+}
+.navbar .login{
+    padding: 8px;
+    background-color: white;
+    border-radius: 999px;
+}
+.navbar .login >*{
+    color: black;
+    padding: 4px;
+}
 
 /* LAYOUT */
 .container{
@@ -53,18 +63,6 @@ a {
     align-items:flex-start;
 }
 
-.navbar .logo{
-    padding: 8px;
-}
-.navbar .login{
-    padding: 8px;
-    background-color: white;
-    border-radius: 999px;
-}
-.navbar .login >*{
-    color: black;
-    padding: 4px;
-}
 .col-100{
     width: 100%;
 }
@@ -88,6 +86,11 @@ a {
     width: calc(100%/6);
 }
 /* HERO */
+.hero{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: white;
+}
 .hero .row{
     justify-content: center;
     flex-direction: column;
@@ -125,12 +128,7 @@ a {
     margin: 0 auto;
     text-align: center;
 }
-.bottom-nav .row{
-    padding-top: 20px;
-    display: flex;
-    
-    justify-content: space-between;
-}
+
 .hero{
     background-image: url(../img/jumbo.png);
     background-size:cover;
@@ -158,8 +156,19 @@ a {
     padding-top: 20px;
     line-height: 25px;
 }
-.width-100{
-    width: 100%;
+.feature{
+    padding: 30px;
+}
+
+
+/* MULTIPLE */
+.multiple{
+    padding: 30px;
+    border-bottom: 2px solid white;
+}
+.multiple .row >*{
+    min-height: 300px;
+    justify-content: space-around;
 }
 .row.multiple {
     display: flex;
@@ -168,6 +177,73 @@ a {
     align-items: center;
     text-align: center;
 }
+
+
+/* BOTTOM-NAV */
+.bottom-nav .row{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.flag-ita{
+    width: 10%;
+    padding:20px 0px ;
+}
+
+.bottom-nav{
+    max-height: 100px;
+}
+
+.bottom-nav .col .register{
+    padding: 12px;
+    background-color: #7289da; 
+    border-radius: 999px;
+    color: white;
+}
+
+.row.bottom-nav{
+    max-height: 100px;
+}
+
+.bottom-feature{
+    padding: 30px;
+}
+
+.register{
+    pad: 70px;
+}
+
+.flag-container{
+    display: flex;
+    align-items: center;
+}
+
+.footer-title{
+    color: #7289da;
+}
+
+.social{
+    padding-top: 20px;
+}
+
+
+/* UTIL */
+.bg-grey{
+    background-color: #d3d3d3;
+}
+
+.bg-shark{
+    background-color: #23272a;
+}
+
+.padding-30{
+    padding: 15px;
+}
+
+.width-100{
+    width: 100%;
+}
+
 .bg-with-text{
     background-image: url(../img/stars.svg);
     background-repeat: no-repeat;  
@@ -176,98 +252,23 @@ a {
 .col > .bg-with-text{
     padding: 50px;
     min-width: 550px;
-    
 }
+
 .col-33{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.flag-ita{
-    width: 10%;
-    padding:20px 0px ;
-}
+
 .col-33 .button{
     max-width: 20%;
 }
 
-.social{
-    padding-top: 20px;
-}
+
 .text-white{
     color: white;
 }
-.footer-title{
-    color: #7289da;
-}
+
 .col-16 li{
     margin-top: 15px;
-}
-.flag-container{
-    display: flex;
-    align-items: center;
-}
-.register{
-    pad: 70px;
-}
-
-
-.row.bottom-nav{
-    max-height: 100px;
-}
-
-
-
-
-.hero{
-    padding-top: 50px;
-    padding-bottom: 100px;
-    color: white;
-}
-
-
-.feature{
-    padding: 30px;
-}
-.bottom-feature{
-    padding: 30px;
-}
-.multiple .row >*{
-    min-height: 300px;
-    justify-content: space-around;
-}
-.multiple{
-    padding: 30px;
-    border-bottom: 2px solid white;
-}
-
-
-.bottom-nav .col .register{
-    padding: 12px;
-    background-color: #7289da; 
-    border-radius: 999px;
-    color: white;
-}
-.bottom-nav{
-    max-height: 100px;
-}
-
-/* BOTTOM-NAV */
-
-
-
-
-
-
-
-
-/* UTIL */
-.bg-grey{
-    background-color: #d3d3d3;
-}
-.bg-shark{
-    background-color: #23272a;
-}
-.padding-30{
-    padding: 15px;
 }
