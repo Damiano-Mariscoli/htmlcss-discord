@@ -1,0 +1,152 @@
+/* RESET RULES */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+/* HEADER */
+.main-header{
+    padding: 16px 0;
+    background-color: #add8e6;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.navbar .menu{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 8px;
+}
+
+
+/* LAYOUT */
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.container-sm{
+    max-width: 720px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar .logo{
+    padding: 8px;
+}
+.navbar .login{
+    padding: 8px;
+}
+.col-100{
+    width: 100%;
+}
+.col-80{
+    width: 80%;
+}
+.col-40{
+    width: 40%;
+}
+.col-60{
+    width: 60%;
+}
+.col-33{
+    width: 33%;
+}
+.col-16{
+    width: calc(100%/6);
+}
+/* HERO */
+.hero .row{
+    justify-content: center;
+}
+.hero .col-100{
+    max-width: 720px;
+    margin: 0 auto;
+}
+.bottom-nav .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* DEBUG */
+.navbar.debug > *{
+    border: 2px dashed black;
+    background-color: #daa520;
+}
+.hero.debug .row{
+    border: 2px dashed black;
+    min-height: 400px;
+    background-color: #ee82ee;
+}
+.debug.hero{
+    background-color: #00008b;
+    padding: 50px 0;
+    color: white;
+}
+.debug.feature .row{
+    min-height: 300px;
+    border: 2px dashed black;
+}
+.debug.feature .col-60{
+    background-color: #1e90ff;
+}
+.debug.feature .col-40{
+    background-color: #ffc0cb;
+}
+.debug.feature{
+    padding: 30px;
+}
+.debug.bottom-feature .container .row{
+    min-height: 500px;
+    border: 2px dashed black;
+    background-color: #228b22;
+}
+.debug.bottom-feature{
+    padding: 30px;
+}
+.debug.multiple .row >*{
+    min-height: 500px;
+    border: 2px dashed black;
+}
+.debug.multiple{
+    padding: 30px;
+    border-bottom: 2px solid white;
+}
+.debug.bottom-nav .row{
+   min-height: 70px;
+   background-color: #7fffd4;
+}
+.debug.bottom-nav{
+    padding-top: 30px;
+}
+.debug.bottom-nav .col{
+    border: 2px dashed black;
+    padding: 4px;
+    background-color: #ffb6c1;
+    
+}
+/* UTIL */
+.bg-grey{
+    background-color: #d3d3d3;
+}
+.bg-shark{
+    background-color: #23272a;
+}
