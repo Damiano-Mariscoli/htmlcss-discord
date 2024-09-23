@@ -169,10 +169,14 @@ a {
 }
 .bg-with-text{
     background-image: url(../img/stars.svg);
-    width: 100%;
+    background-repeat: no-repeat;  
 }
 
-
+.col > .bg-with-text{
+    padding: 50px;
+    min-width: 550px;
+    
+}
 
 /* DEBUG */
 .hero.debug .row{
@@ -206,7 +210,7 @@ a {
     border: 2px dashed black;
     background-color: #228b22;
 } */
-.debug.bottom-feature{
+.bottom-feature{
     padding: 30px;
 }
 .debug.multiple .row >*{
