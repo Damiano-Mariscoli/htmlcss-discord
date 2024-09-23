@@ -126,8 +126,9 @@ a {
     text-align: center;
 }
 .bottom-nav .row{
+    padding-top: 20px;
     display: flex;
-    align-items: center;
+    
     justify-content: space-between;
 }
 .hero{
@@ -211,26 +212,19 @@ a {
 }
 
 
-
-
-
-
-/* DEBUG */
-.hero.debug .row{
-    min-height: 400px;
-    
+.row.bottom-nav{
+    max-height: 100px;
 }
-.debug.hero{
-    background-color: #00008b;
+
+
+
+
+.hero{
     padding-top: 50px;
     padding-bottom: 100px;
     color: white;
 }
 
-/* .debug.feature .row{
-    min-height: 300px;
-    border: 2px dashed black;
-} */
 
 .feature{
     padding: 30px;
@@ -238,28 +232,34 @@ a {
 .bottom-feature{
     padding: 30px;
 }
-.debug.multiple .row >*{
-    min-height: 500px;
-    border: 2px dashed black;
+.multiple .row >*{
+    min-height: 300px;
+    justify-content: space-around;
 }
-.debug.multiple{
+.multiple{
     padding: 30px;
     border-bottom: 2px solid white;
 }
-/* .debug.bottom-nav .row{
-   min-height: 70px;
-   background-color: #7fffd4;
-} */
-.bottom-nav{
-    padding-top: 30px;
-    padding-bottom: 100px;
-}
+
+
 .bottom-nav .col .register{
     padding: 12px;
     background-color: #7289da; 
     border-radius: 999px;
     color: white;
 }
+.bottom-nav{
+    max-height: 100px;
+}
+
+/* BOTTOM-NAV */
+
+
+
+
+
+
+
 
 /* UTIL */
 .bg-grey{
@@ -267,4 +267,7 @@ a {
 }
 .bg-shark{
     background-color: #23272a;
+}
+.padding-30{
+    padding: 15px;
 }
