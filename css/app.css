@@ -1,4 +1,7 @@
 /* RESET RULES */
+html{
+    font-family: 'Whitney', sans-serif;;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,19 +19,21 @@ a {
 /* HEADER */
 .main-header{
     padding: 16px 0;
-    background-image: url(../img/jumbo.png);
+    background-color: #255ee9;
+    color: white;
     
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    
     
 }
 .navbar .menu{
     display: flex;
-    gap: 16px;
+    gap: 50px;
     align-items: center;
     padding: 8px;
 }
@@ -45,7 +50,7 @@ a {
 }
 .row{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .navbar .logo{
@@ -53,6 +58,12 @@ a {
 }
 .navbar .login{
     padding: 8px;
+    background-color: white;
+    border-radius: 16px;
+}
+.navbar .login >*{
+    color: black;
+    padding: 4px;
 }
 .col-100{
     width: 100%;
@@ -75,24 +86,50 @@ a {
 /* HERO */
 .hero .row{
     justify-content: center;
+    flex-direction: column;
+}
+.hero .row h1{
+    padding: 24px;
+}
+.hero .row .col-100{
+    line-height: 30px;
+}
+.cta-dw-white{
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 16px;
+    padding: 8px;
+}
+.cta-dw-shark{
+    color: black;
+    border: 1px solid #23272a;
+    background-color: #23272a;
+    border-radius: 16px;
+    padding: 8px;
 }
 .hero .col-100{
     max-width: 720px;
     margin: 0 auto;
+    text-align: center;
 }
 .bottom-nav .row{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-
-/* DEBUG */
-.main-header, .hero{
+.hero{
     background-image: url(../img/jumbo.png);
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
+.hero h1{
+    font-size: 40px;
+}
+
+/* DEBUG */
+
 /* .navbar.debug > *{
     border: 2px dashed black;
     background-color: #daa520;
@@ -100,7 +137,7 @@ a {
 .hero.debug .row{
     border: 2px dashed black;
     min-height: 400px;
-    background-color: #ee82ee;
+    
 }
 .debug.hero{
     background-color: #00008b;
@@ -115,9 +152,11 @@ a {
 }
 .debug.feature .col-60{
     background-color: #1e90ff;
+    height: 300px;
 }
 .debug.feature .col-40{
     background-color: #ffc0cb;
+    height: 300px;
 }
 .debug.feature{
     padding: 30px;
